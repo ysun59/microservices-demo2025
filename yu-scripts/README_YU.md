@@ -17,6 +17,7 @@ to assign different CPU counts to containers.
 
 ## random-container2-1-cpuSet.sh
 This script configures CPU sets, assigning 1 core per container. 
+
 It sets the containers to core 0; core 2; core 4; core 6, etc.
 
 **⚠️ Note**
@@ -24,7 +25,8 @@ The setting will be reset after a restart.
 Therefore, always set **CPUs first**, then **CPU sets**.
 
 ## random-container2-2-cpuSet.sh
-This script configures CPU sets, assigning 2 cores per container:
+This script configures CPU sets, assigning 2 cores per container.
+
 It sets the containers to core 0, 2; core 4, 6; core 8, 10, etc.
 
 **⚠️ Note**
@@ -32,7 +34,8 @@ The setting will be reset after a restart.
 Always set **CPUs first**, then **CPU sets**.
 
 ## random-container2-4-cpuSet.sh
-This script configures CPU sets, assigning 4 cores per container:
+This script configures CPU sets, assigning 4 cores per container.
+
 It sets the containers to core 0, 1, 2, 3; core 4, 5, 6, 7; core 8, 9, 10, 11, etc.
 
 **⚠️ Note**

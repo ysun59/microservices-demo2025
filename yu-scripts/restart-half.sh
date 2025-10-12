@@ -39,13 +39,18 @@ kubectl get svc -A | grep frontend-external
 /home/yu/k8s/microservices-demo/yu-scripts/random-container1-cpusRandom.sh
 /home/yu/k8s/microservices-demo/yu-scripts/random-container2-2-cpuSet.sh
 
-#verify1
+# # verify1
 # kubectl describe deployment adservice -n microservices-demo | grep -A 5 "Limits"
 
+# # 用locust
 # source /home/yu/k8s/locust-venv/bin/activate
 # cd /home/yu/k8s/microservices-demo/src/loadgenerator
 # locust
 
-# 开一个新的窗口
-# ssh -L 38089:192.168.132.31:8089 yu@kaesi.dev (38089随便的)
+# # 开一个新的窗口
+# ssh -L 38089:192.168.128.31:8089 yu@kaesi.dev 
 # 打开chrome，http://localhost:38089/ （和ssh写的对应）
+
+# # Host的位置输入curl的地址: http://192.168.128.31:32076（这里必须是那个32076）
+# # 32076通过kubectl get svc frontend-external 得到
+# deactivate
