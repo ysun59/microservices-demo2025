@@ -44,6 +44,15 @@ Always set **CPUs first**, then **CPU sets**.
 
 ## changeMachine.sh
 If the physical machine has been moved to a new room or subnet, use this script (and the following instructions) to re-run the Online Boutique benchmark.
+```bash
+cd /home/yu/k8s/microservices-demo2025/yu-scripts
+./changeMachine.sh
+```
+Or
+```bash
+cd /home/yu/k8s/microservices-demo2025/yu-scripts
+./changeMachine-old.sh
+```
 
 **New login**
 ```bash
